@@ -1,0 +1,273 @@
+.Login {
+    height: 50vh;
+    background-color: #F5F5F5;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 30%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 39.3);
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+
+
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+
+    color: #212529;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    margin-top: 5%;
+  
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.head-txt{
+    
+    color: #968E9F;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 14%;
+    font-size: 18px;
+    width: 80%;
+}
+
+.horizontal-line {
+    height: 2px;
+    width: 6%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #FB236A;
+  }
+
+
+  .card {
+    width: 37rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.3);
+  } 
+
+
+
+.intro{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 105%;
+  }
+
+  .boxnbtn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .ara a{
+    text-decoration: none;
+    font-weight: bold;
+    color:black ;
+    font-size: 1.05rem;
+  }
+
+
+  
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .Login {
+        height: 70vh;
+        background-color: #F5F5F5;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-bottom: 170%;
+        /* box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.3); */
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+    }
+    
+    
+    
+    
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .heading{
+    
+        color: #212529;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    
+        margin-top: 5%;
+      
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    .head-txt{
+        
+        color: #968E9F;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+       
+        margin-bottom: 5%;
+        font-size: 18px;
+        width: 80%;
+    }
+    
+    .horizontal-line {
+        height: 2px;
+        width: 6%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        background-color: #FB236A;
+      }
+    
+    
+      .card {
+        width: 23rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        top: 95%;
+        left: 7%;
+        box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.3);
+      } 
+    
+    
+    
+    .intro{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 1.25rem;
+        font-weight: bolder;
+    }
+    
+      .example-form {
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+      }
+      
+      .example-full-width {
+        width: 105%;
+      }
+    
+      .boxnbtn{
+        display: flex;
+        
+        margin-top: 6%;
+        margin-bottom: 6%;
+        flex-direction: column;
+      }
+    
+      .ara a{
+        text-decoration: none;
+        font-weight: bold;
+        color:black ;
+        font-size: 1.05rem;
+      }
+    
+
+
+      section {
+        display: table;
+      }
+      
+      .example-label {
+        display: table-cell;
+        font-size: 14px;
+        margin-left: 8px;
+        min-width: 120px;
+        
+      }
+      
+      .example-button-row {
+        display: table-cell;
+        max-width: 600px;
+        
+      }
+      
+      .example-button-row .mat-mdc-button-base {
+        margin: 8px 8px 8px 0;
+        width: 100%;
+      }
+      
+      .example-flex-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+      }
+      
+      .example-button-container {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+      }
+       
+/* Add this style to change the button width */
+button.mat-raised-button {
+    width: 200px !important; /* Use !important to override other styles if necessary */
+}
+
+/* Additional styling for button container if necessary */
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Set to 100% to take full width of its container */
+    margin-top: 16px; /* Add margin as needed */
+}
+
+/* Additional styles for button row */
+.example-button-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+}

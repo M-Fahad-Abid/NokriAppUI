@@ -1,0 +1,79 @@
+<div class="Login">
+    <div class="container">
+      <div class="row">
+        <div class="top">
+          <div class="heading">Employer Registration</div>
+          <div class="horizontal-line"></div>
+          <div class="head-txt">
+            Having great skills and specialty in software quality assurance,
+            software testing, software requirement.
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-body">
+
+            <a [routerLink]="['/login']">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                </svg>
+              </a>
+              
+            <div class="intro">Register Using your email</div>
+  
+            <form class="example-form"  (ngSubmit)="registerEmployer()" >
+
+              <!-- Name -->
+              <mat-form-field class="example-full-width">
+                <mat-label>Company Name</mat-label>
+                <input matInput placeholder="Ex. Pure Logics etc." [(ngModel)]="employerobj.companyName" name="companyName" />
+                <mat-error *ngIf="!employerobj.companyName">
+                  Name is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+              
+              <!-- Email -->
+              <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput  placeholder="Ex. pat@example.com" [(ngModel)]="employerobj.email" name="email" />
+                <mat-error *ngIf="!employerobj.email">
+                  Name is <strong>required</strong>
+                </mat-error>
+                
+              </mat-form-field>
+              
+              <!-- Password -->
+              <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput  placeholder="Ex. ******" [(ngModel)]="employerobj.password" name="password"/>
+                <mat-error *ngIf="!employerobj.password">
+                  Name is <strong>required</strong>
+                </mat-error>
+
+                
+              </mat-form-field>
+              
+          
+              
+              <!-- btns -->
+              <div class="boxnbtn">
+                <div class="buttonp">
+                  <div class="example-button-row">
+                    <button mat-raised-button color="primary" type="submit">Register</button>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- already account btn -->
+              <div class="ara">
+                Already have an account?
+                <a [routerLink]="['/login']"> Login </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
