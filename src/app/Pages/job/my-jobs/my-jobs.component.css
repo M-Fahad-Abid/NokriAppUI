@@ -1,0 +1,18 @@
+.cards{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+.heading{
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    color: deeppink;
+}

@@ -1,1 +1,107 @@
-<p>create-new-job works!</p>
+<div class="fullpage">
+<div class="container-fluid px-1 py-5 mx-auto">
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+            <h3>Create a Job</h3>
+            <!-- <p class="blue-text">
+        Just answer a few questions<br />
+        so that we can personalize the right experience for you.
+      </p> -->
+            <div class="card">
+                <h5 class="text-center mb-4">Please Enter Your Details</h5>
+
+
+                <form class="form-card" (ngSubmit)="CreateJob()">
+
+
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Job Title<span class="text-danger"> *</span></label>
+                            <input type="text" placeholder="enter title" [(ngModel)]="CreateJobObj.title" name="title" />
+                        </div>
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Description<span class="text-danger"> *</span></label>
+                            <input type="text" placeholder="enter description" [(ngModel)]="CreateJobObj.description" name="description" />
+                        </div>
+                    </div>
+
+
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Posted Date<span class="text-danger">
+                                    *</span></label>
+                                    <input type="text" placeholder="enter job posting date" [(ngModel)]="CreateJobObj.postedDate" name="postedDate" />
+                        </div>
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Till<span class="text-danger">
+                                    *</span></label>
+                                    <input type="text" placeholder="valid date"  [(ngModel)]="CreateJobObj.deadline" name="deadline" />
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Location<span class="text-danger">
+                                    *</span></label>
+                                    <input type="text" placeholder="enter location"  [(ngModel)]="CreateJobObj.location" name="location" />
+                        </div>
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Expected Salary<span class="text-danger">
+                                    *</span></label>
+                                    <input type="text" placeholder="enter expected salary"  [(ngModel)]="CreateJobObj.expected_Salary" name="expectedSalary" />
+
+                        </div>
+                    </div>
+
+
+                    <div class="row justify-content-between text-left">
+                        <label class="form-control-label px-3">You Can leave the fields Empty</label>
+
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Required Skill 1<span class="text-danger"> *</span></label>
+                            <input type="text" placeholder="skill" [(ngModel)]="CreateJobObj.skill_Required_1" name="skillRequired1" />
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Required Skill 2<span class="text-danger"> *</span></label>
+                            <input type="text" placeholder="skill 2"  [(ngModel)]="CreateJobObj.skill_Required_2" name="skillRequired2" />
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between text-left">
+                        <div class="form-group col-sm-6 flex-column d-flex">
+                            <label class="form-control-label px-3">Required Skill 3<span class="text-danger"> *</span></label>
+                            <input type="text"placeholder="skill 3"  [(ngModel)]="CreateJobObj.skill_Required_3" name="skillRequired3" />
+                        </div>
+                    </div>
+
+                    <!-- <div class="row justify-content-between text-left">
+                        <div class="form-group col-12 flex-column d-flex">
+                            <label class="form-control-label px-3">What would you be using Flinks for?<span
+                                    class="text-danger">
+                                    *</span></label>
+                            <input type="text" id="ans" name="ans" placeholder=""  />
+                        </div>
+                    </div> -->
+                    
+                    
+                    
+                    <!-- Button -->
+                    <div class="submitbtn">
+                        <div class="row justify-content-center">
+                            <div class="form-group col-sm-6">
+                                <button type="button" class="btn btn-outline-primary" type="submit">Create</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
